@@ -1,4 +1,4 @@
-// Copyright (c) 2015-2016, tandasat. All rights reserved.
+// Copyright (c) 2015-2018, Satoshi Tanda. All rights reserved.
 // Use of this source code is governed by a MIT-style license that can be
 // found in the LICENSE file.
 
@@ -25,13 +25,15 @@
 // types
 //
 
+struct SharedShadowHookData;
+
 ////////////////////////////////////////////////////////////////////////////////
 //
 // prototypes
 //
 
 _IRQL_requires_max_(PASSIVE_LEVEL) EXTERN_C NTSTATUS
-    DdimonInitialization(PDRIVER_OBJECT driver_object);
+    DdimonInitialization(_In_ SharedShadowHookData* shared_sh_data);
 
 _IRQL_requires_max_(PASSIVE_LEVEL) EXTERN_C void DdimonTermination();
 

@@ -48,7 +48,19 @@
     <ClCompile Include="..\HyperPlatform\HyperPlatform\vmm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="shadow_bp.cpp">
+    <ClCompile Include="..\HyperPlatform\HyperPlatform\kernel_stl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="shadow_hook.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HyperPlatform\HyperPlatform\global_object.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HyperPlatform\HyperPlatform\hotplug_callback.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HyperPlatform\HyperPlatform\power_callback.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -71,9 +83,6 @@
     <ClInclude Include="..\HyperPlatform\HyperPlatform\ia32_type.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\HyperPlatform\HyperPlatform\kernel_stl.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\HyperPlatform\HyperPlatform\log.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -92,10 +101,16 @@
     <ClInclude Include="..\HyperPlatform\HyperPlatform\vmm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="shadow_bp.h">
+    <ClInclude Include="shadow_hook.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="shadow_bp_internal.h">
+    <ClInclude Include="..\HyperPlatform\HyperPlatform\global_object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HyperPlatform\HyperPlatform\hotplug_callback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HyperPlatform\HyperPlatform\power_callback.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
